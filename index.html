@@ -1,126 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnologia 2024</title>
-    <style>
-        body {
-            background-color: powderblue;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnologia 2024</title>
+  <style>
+    body {
+      background-color: powderblue;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
 
-        table {
-            font-family: Arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-            margin: 20px 0;
-        }
+    table {
+      font-family: Arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
 
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
+    th,
+    td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
 
-        tr:nth-child(even) {
-            background-color: rgb(230, 230, 230);
-        }
+    tr:nth-child(even) {
+      background-color: rgb(230, 230, 230);
+    }
 
-        tr:nth-child(odd) {
-            background-color: rgb(240, 240, 240);
-        }
+    tr:nth-child(odd) {
+      background-color: rgb(240, 240, 240);
+    }
 
-        h1 {
-            background-color: rgb(200, 200, 200);
-            text-align: center;
-            padding: 10px;
-            margin: 0;
-            font-size: 1.5em;
-        }
+    h1 {
+      background-color: rgb(200, 200, 200);
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+      font-size: 1.5em;
+    }
 
-        .qr-code {
-            text-align: center;
-            margin: 20px 0;
-        }
+    .qr-code {
+      text-align: center;
+      margin: 20px 0;
+    }
 
-        .qr-code img {
-            max-width: 400px;
-            height: auto;
-        }
+    .qr-code img {
+      max-width: 400px;
+      height: auto;
+    }
 
-        @media screen and (max-width: 600px) {
-            table {
-                width: 100%;
-                margin: 10px 0;
-            }
+    /* Estilizando os botões */
+    button,
+    a.button-link {
+      background-color: #4CAF50;
+      /* Verde */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
 
-            h1 {
-                font-size: 1.2em;
-                padding: 8px;
-            }
-        }
-    </style>
+    button:hover,
+    a.button-link:hover {
+      background-color: #45a049;
+      /* Verde mais escuro no hover */
+      box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (max-width: 600px) {
+      table {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      h1 {
+        font-size: 1.2em;
+        padding: 8px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <table>
-        <tr>
-            <th colspan="1">
-                <h1>
-                    <a target="_blank" href="https://docs.google.com/document/d/1VJZxJLMi0xmHFlV-6FY-HG0HNNZ6XxndfPFA7X0l_rM/edit?usp=sharing" style="text-decoration: none; color: black;">
-                        Material
-                    </a>
-                </h1>
-            </th>
-        </tr>
-    </table>
+
+  <table>
+    <tr>
+      <th colspan="1">
+        <h1 style="text-align: center;font-size:50px;">Tecnologia 2024</h1>
+      </th>
+    </tr>
+  </table>
+
+  <div class="botoes" style="text-align: center;">
+    <button onclick="show3bim()"> 3°Bimestre </button>
+    <button onclick="show4bim()"> 4°Bimestre </button>
+  </div>
+
+  <div id="3bim">
 
     <table>
-        <tr>
-            <th>Aulas</th>
-        </tr>
-        <tr>
-            <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/mdZweNM">1. Estrutura HTML</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/dyBRMpq">2. Tags e Atributos</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/VwJMBrN">3. Table e List</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/mdZBjGy">4. External, Internal e Inline com CSS</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/XWLZMJe">5. Classes e Id com CSS</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/oNrEZoV">6. Div e Box Model</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/JjQpNWj">7. Javascript Básico</a></td>
-        </tr>
-        <tr>
-            <td><a href="ex8.html">8. Site Online</a></td>
-        </tr>
-        <tr>
-            <td><a href="proj1.html">9. Projeto 1</a></td>
-        </tr>
-        <tr>
-            <td><a href="proj2.html">10. Projeto 2</a></td>
-        </tr>
+      <tr>
+        <th><a target="_blank" href="https://docs.google.com/document/d/1VJZxJLMi0xmHFlV-6FY-HG0HNNZ6XxndfPFA7X0l_rM/edit?usp=sharing" style="font-size:30px;">
+            Material
+          </a></th>
+      </tr>
+    </table>
+    <h2>
+
+    </h2>
+
+    <table>
+      <tr>
+        <th>Aulas</th>
+      </tr>
+      <tr>
+        <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/mdZweNM">1. Estrutura HTML</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/dyBRMpq">2. Tags e Atributos</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/VwJMBrN">3. Table e List</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/mdZBjGy">4. External, Internal e Inline com CSS</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/XWLZMJe">5. Classes e Id com CSS</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/oNrEZoV">6. Div e Box Model</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://codepen.io/FABIO-LOFREDO-CESAR/pen/JjQpNWj">7. Javascript Básico</a></td>
+      </tr>
+      <tr>
+        <td><a href="ex8.html">8. Site Online</a></td>
+      </tr>
+      <tr>
+        <td><a href="proj1.html">9. Projeto 1</a></td>
+      </tr>
+      <tr>
+        <td><a href="proj2.html">10. Projeto 2</a></td>
+      </tr>
     </table>
     <table>
       <tr>
-        <th><a target="_blank" href="https://dazai67.github.io/levantesi/">Site desenvolvido pela aluna Rebeca Levantesi</h>
+        <th><a target="_blank" href="https://dazai67.github.io/levantesi/">Site desenvolvido pela aluna Rebeca Levantesi</h1>
+        </th>
       </tr>
     </table>
-    <div class="qr-code">
-        <p>QRCode para o site:</p>
-        <img src="qrcode.png" alt="qrcode">
-    </div>
+  </div>
+
+  <div id="4bim">
+    Em construção
+  </div>
+
+  <div class="qr-code">
+    <p>QRCode para o site:</p>
+    <img src="qrcode.png" alt="qrcode">
+  </div>
 </body>
+
+<script>
+  function show3bim() {
+    document.getElementById('3bim').style.display = 'block';
+    document.getElementById('4bim').style.display = 'none';
+  }
+
+  function show4bim() {
+    document.getElementById('3bim').style.display = 'none';
+    document.getElementById('4bim').style.display = 'block';
+  }
+  // Função que será executada ao carregar a página
+  function iniciar() {
+    show3bim();
+  }
+  window.onload = iniciar;
+</script>
+
 </html>
