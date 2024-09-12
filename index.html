@@ -186,7 +186,16 @@
   </div>
 
   <div id="4bim">
-    4°Bim em construção
+     <table>
+      <tr>
+        <th>Aulas</th>
+      </tr>
+      <tr>
+        <td><a href="#" onclick="introducao4bim()">1. Introdução</a><br>
+        <iframe style="height: 200px; width: 100%;" src="https://docs.google.com/document/d/1xsKQ7oxbKqfBJF-pKf5CJ3ovcYUiRJr8I5Z2WE33-zQ/pub?embedded=true"></iframe></td>
+      </tr>
+
+    </table>
   </div>
 
   <div class="qr-code">
@@ -196,6 +205,14 @@
 </body>
 
 <script>
+  
+    function introducao4bim(){
+    if(document.getElementById('docsintroducao4bim').style.display =="none") { 
+     document.getElementById('docsintroducao4bim').style.display = 'block';}
+      else{
+        document.getElementById('docsintroducao4bim').style.display = 'none';
+      }
+    }
     function show1bim() {
     document.getElementById('1bim').style.display = 'block';
     document.getElementById('2bim').style.display = 'none';
