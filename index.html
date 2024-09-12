@@ -112,21 +112,48 @@
   </div>
 
   <div id="1bim">
-        <table>
+    <table>
       <tr>
         <th><a target="_blank" href="https://docs.google.com/document/d/1wUpkQaYiIR82LGpoZja_RlX5O_gJ6RngWyGGe45jOzA/edit?usp=sharing" style="font-size:30px;">
             Material 1°Bim
           </a></th>
       </tr>
     </table>
+    <table>
+      <tr>
+        <th>Links</th>
+      </tr>
+      <tr>
+        <td><a href="https://www.onlinegdb.com/" target="_blank">GDB</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://editor.p5js.org/" target="_blank">p5js</a></td>
+      </tr>
+
+    </table>
+
   </div>
   <div id="2bim">
-        <table>
+    <table>
       <tr>
         <th><a target="_blank" href="https://docs.google.com/document/d/1wUpkQaYiIR82LGpoZja_RlX5O_gJ6RngWyGGe45jOzA/edit?usp=sharing" style="font-size:30px;">
             Material 2°Bim
           </a></th>
       </tr>
+    </table>
+
+    </table>
+    <table>
+      <tr>
+        <th>Links</th>
+      </tr>
+      <tr>
+        <td><a href="https://www.onlinegdb.com/" target="_blank">GDB</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://editor.p5js.org/" target="_blank">p5js</a></td>
+      </tr>
+
     </table>
   </div>
   <div id="3bim">
@@ -186,13 +213,14 @@
   </div>
 
   <div id="4bim">
-     <table>
+    <table>
       <tr>
         <th>Aulas</th>
       </tr>
       <tr>
         <td><a href="#" onclick="introducao4bim()">1. Introdução</a><br>
-        <iframe style="height: 200px; width: 100%;" src="https://docs.google.com/document/d/1xsKQ7oxbKqfBJF-pKf5CJ3ovcYUiRJr8I5Z2WE33-zQ/pub?embedded=true"></iframe></td>
+          <iframe id="docsintroducao4bim" style="display:none ;height:200px; width: 100%;" src="https://docs.google.com/document/d/1xsKQ7oxbKqfBJF-pKf5CJ3ovcYUiRJr8I5Z2WE33-zQ/pub?embedded=true"></iframe>
+        </td>
       </tr>
 
     </table>
@@ -205,15 +233,15 @@
 </body>
 
 <script>
-  
-    function introducao4bim(){
-    if(document.getElementById('docsintroducao4bim').style.display =="none") { 
-     document.getElementById('docsintroducao4bim').style.display = 'block';}
-      else{
-        document.getElementById('docsintroducao4bim').style.display = 'none';
-      }
+  function introducao4bim() {
+    if (document.getElementById('docsintroducao4bim').style.display == "none") {
+      document.getElementById('docsintroducao4bim').style.display = 'block';
+    } else {
+      document.getElementById('docsintroducao4bim').style.display = 'none';
     }
-    function show1bim() {
+  }
+
+  function show1bim() {
     document.getElementById('1bim').style.display = 'block';
     document.getElementById('2bim').style.display = 'none';
     document.getElementById('3bim').style.display = 'none';
@@ -223,7 +251,8 @@
     document.getElementById('button3').style.backgroundColor = "#4CAF50";
     document.getElementById('button4').style.backgroundColor = "#4CAF50";
   }
-   function show2bim() {
+
+  function show2bim() {
     document.getElementById('1bim').style.display = 'none';
     document.getElementById('2bim').style.display = 'block';
     document.getElementById('3bim').style.display = 'none';
@@ -233,6 +262,7 @@
     document.getElementById('button3').style.backgroundColor = "#4CAF50";
     document.getElementById('button4').style.backgroundColor = "#4CAF50";
   }
+
   function show3bim() {
     document.getElementById('1bim').style.display = 'none';
     document.getElementById('2bim').style.display = 'none';
