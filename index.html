@@ -105,16 +105,36 @@
   </table>
 
   <div class="botoes" style="text-align: center;">
-    <button onclick="show3bim()"> 3°Bimestre </button>
-    <button onclick="show4bim()"> 4°Bimestre </button>
+    <button id="button1" onclick="show1bim()">1°Bim</button>
+    <button id="button2" onclick="show2bim()">2°Bim</button>
+    <button id="button3" onclick="show3bim()">3°Bim</button>
+    <button id="button4" onclick="show4bim()">4°Bim</button>
   </div>
 
+  <div id="1bim">
+        <table>
+      <tr>
+        <th><a target="_blank" href="https://docs.google.com/document/d/1wUpkQaYiIR82LGpoZja_RlX5O_gJ6RngWyGGe45jOzA/edit?usp=sharing" style="font-size:30px;">
+            Material 1°Bim
+          </a></th>
+      </tr>
+    </table>
+  </div>
+  <div id="2bim">
+        <table>
+      <tr>
+        <th><a target="_blank" href="https://docs.google.com/document/d/1wUpkQaYiIR82LGpoZja_RlX5O_gJ6RngWyGGe45jOzA/edit?usp=sharing" style="font-size:30px;">
+            Material 2°Bim
+          </a></th>
+      </tr>
+    </table>
+  </div>
   <div id="3bim">
 
     <table>
       <tr>
         <th><a target="_blank" href="https://docs.google.com/document/d/1VJZxJLMi0xmHFlV-6FY-HG0HNNZ6XxndfPFA7X0l_rM/edit?usp=sharing" style="font-size:30px;">
-            Material
+            Material 3°Bim
           </a></th>
       </tr>
     </table>
@@ -166,7 +186,7 @@
   </div>
 
   <div id="4bim">
-    Em construção
+    4°Bim em construção
   </div>
 
   <div class="qr-code">
@@ -176,14 +196,46 @@
 </body>
 
 <script>
+    function show1bim() {
+    document.getElementById('1bim').style.display = 'block';
+    document.getElementById('2bim').style.display = 'none';
+    document.getElementById('3bim').style.display = 'none';
+    document.getElementById('4bim').style.display = 'none';
+    document.getElementById('button1').style.backgroundColor = "#005000";
+    document.getElementById('button2').style.backgroundColor = "#4CAF50";
+    document.getElementById('button3').style.backgroundColor = "#4CAF50";
+    document.getElementById('button4').style.backgroundColor = "#4CAF50";
+  }
+   function show2bim() {
+    document.getElementById('1bim').style.display = 'none';
+    document.getElementById('2bim').style.display = 'block';
+    document.getElementById('3bim').style.display = 'none';
+    document.getElementById('4bim').style.display = 'none';
+    document.getElementById('button1').style.backgroundColor = "#4CAF50";
+    document.getElementById('button2').style.backgroundColor = "#005000";
+    document.getElementById('button3').style.backgroundColor = "#4CAF50";
+    document.getElementById('button4').style.backgroundColor = "#4CAF50";
+  }
   function show3bim() {
+    document.getElementById('1bim').style.display = 'none';
+    document.getElementById('2bim').style.display = 'none';
     document.getElementById('3bim').style.display = 'block';
     document.getElementById('4bim').style.display = 'none';
+    document.getElementById('button1').style.backgroundColor = "#4CAF50";
+    document.getElementById('button2').style.backgroundColor = "#4CAF50";
+    document.getElementById('button3').style.backgroundColor = "#005000";
+    document.getElementById('button4').style.backgroundColor = "#4CAF50";
   }
 
   function show4bim() {
+    document.getElementById('1bim').style.display = 'none';
+    document.getElementById('2bim').style.display = 'none';
     document.getElementById('3bim').style.display = 'none';
     document.getElementById('4bim').style.display = 'block';
+    document.getElementById('button1').style.backgroundColor = "#4CAF50";
+    document.getElementById('button2').style.backgroundColor = "#4CAF50";
+    document.getElementById('button3').style.backgroundColor = "#4CAF50";
+    document.getElementById('button4').style.backgroundColor = "#005000";
   }
   // Função que será executada ao carregar a página
   function iniciar() {
